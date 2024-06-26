@@ -1,12 +1,10 @@
-/* FileName: library.css */
-
 .library {
     position: absolute;
     top: 0;
     left: 0;
     width: 20rem;
     height: 100%;
-    background: #32522b;
+    background: rgb(54, 34, 75) 0%;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.205);
     overflow: scroll;
     transform: translateX(-100%);
@@ -24,11 +22,12 @@
     padding: 1rem 2rem 1rem 2rem;
 
     img {
-        width: 30%;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
     &:hover {
-        background: rgb(120, 248, 160);
+        background: rgb(239, 208, 249);
     }
 }
 
@@ -36,34 +35,49 @@
     padding-left: 1rem;
 
     h3 {
-        color: #ffffff;
         font-size: 1rem;
     }
 
     h4 {
-        color: gray;
+        color: #e4d6f9;
         font-size: 0.7rem;
     }
 }
+
+.library-song:hover {
+
+    h3 {
+        color: rgb(60, 22, 60);
+        font-size: 1rem;
+    }
+
+    h4 {
+        color: rgb(62, 42, 83);
+        font-size: 0.7rem;
+    }
+}
+
+
 
 ::-webkit-scrollbar {
     width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 183, 183);
+    background: rgb(19, 0, 39);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(221, 221, 221);
+    background: rgb(255, 230, 255);
 }
 
 .selected {
     background: rgb(255, 230, 255);
 
-    h3 {
-        color: #306b26;
+    h3,
+    h4 {
+        color: rgb(60, 22, 60);
     }
 }
 

@@ -1,8 +1,6 @@
-/*FileName: nav.css */
-
 h1,
 h4 {
-    color: rgb(9, 70, 9);
+    color: rgb(60, 22, 60);
 }
 
 nav {
@@ -18,12 +16,12 @@ nav {
         cursor: pointer;
         font-size: 16px;
         margin-left: 20%;
-        border: 2px solid rgb(41, 216, 25);
+        border: 2px solid rgb(60, 22, 60);
         padding: 0.8rem;
         transition: all 0.3s ease;
 
         &:hover {
-            background: rgb(89, 219, 77);
+            background: #dac3fa;
             color: white;
         }
     }

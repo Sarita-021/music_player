@@ -1,4 +1,3 @@
-// FileName: PlayerSong.js 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -87,13 +86,7 @@ const Player = ({
         <div className="player">
             <div className="time-control">
                 <p>{getTime(songInfo.currentTime)}</p>
-                <div
-                    style={{
-                        background:
-                            `linear-gradient(to right, ${currentSong.color[0]}, ${currentSong.color[1]})`,
-                    }}
-                    className="track"
-                >
+                <div className="track">
                     <input
                         min={0}
                         max={songInfo.duration || 0}
@@ -101,7 +94,6 @@ const Player = ({
                         onChange={dragHandler}
                         type="range"
                     />
-                    <div style={trackAnim} className="animate-track"></div>
                 </div>
                 <p>
                     {songInfo.duration ? getTime(songInfo.duration) : "00:00"}
@@ -113,6 +105,7 @@ const Player = ({
                     size="2x"
                     className="skip-back"
                     icon={faAngleLeft}
+                    color="rgb(239, 208, 249)"
                 />
                 {!isPlaying ? (
                     <FontAwesomeIcon
@@ -120,6 +113,7 @@ const Player = ({
                         size="2x"
                         className="play"
                         icon={faPlay}
+                        color="rgb(239, 208, 249)"
                     />
                 ) : (
                     <FontAwesomeIcon
@@ -127,6 +121,7 @@ const Player = ({
                         size="2x"
                         className="pause"
                         icon={faPause}
+                        color="rgb(239, 208, 249)"
                     />
                 )}
 
@@ -135,6 +130,7 @@ const Player = ({
                     size="2x"
                     className="skip-forward"
                     icon={faAngleRight}
+                    color="rgb(239, 208, 249)"
                 />
             </div>
         </div>

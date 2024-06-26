@@ -1,12 +1,11 @@
-// FileName: data.js 
+
 
 import { v4 as uuidv4 } from "uuid";
 function chillHop() {
     return [
         {
             name: "Sunrise Serenade",
-            cover:
-                "https://media.geeksforgeeks.org/wp-content/uploads/20210224040124/JSBinCollaborativeJavaScriptDebugging6.png",
+            cover: "../images/music.jpg",
             artist: " Harmony Harp",
             audio:
                 "https://media.geeksforgeeks.org/wp-content/uploads/20231004185212/Jawan-Prevue-Theme.mp3",
@@ -38,8 +37,7 @@ function chillHop() {
         },
         {
             name: "Electro Vibes",
-            cover:
-                "https://media.geeksforgeeks.org/wp-content/uploads/20231004184219/gfglogo0.jpg",
+            cover: "../images/music.jpg",
             artist: "Synthwave Sensation",
             audio:
                 "https://media.geeksforgeeks.org/wp-content/uploads/20231004191840/Zinda-Banda---Jawan-(1).mp3",
